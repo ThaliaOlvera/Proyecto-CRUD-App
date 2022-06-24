@@ -16,41 +16,47 @@
 </head>
 <body>
 
+  <br><br>
+
     <header>
         
 
+      <article class="container">
+          <article class="row">
+              <article class="columnam5">
+                  <article class="card">
+                      <div class="header">
+                          <h1><i>Programa tus Vacaciones</i></h1>
+                      </div>
+                     
+                      <div class="container">
+                          
+  
+                          <form id="formulario">
+                              <div class="formgroup">
+                                  <input type="text" class="formcontrol" id="inputDestino" placeholder="Ingresa tu Destino"></input>
+                              </div>
+                              <div class="formgroup">
+                                  <input type="text" class="formcontrol" id="inputActividades"  placeholder="Ingrese sus Actividades"></input>
+                              </div>
+                              <div class="formgroup">
+                                  <input type="text" class="formcontrol" id="inputPresupuesto" placeholder="Ingrese su Presupuesto"></input>
+                              </div>
+                              <div class="d-grid gap-2 col-6 mx-auto">
+                                <button class="btn btn-dark" type="submit">Guardar</button>
+                               </div>
+  
+                         
+                          </form>
+                          <br><br>
+  
+                      </div>
+                      
+                  </article>
+              </article>
     </header>
     <br><br>
       <section>
-        <article class="container">
-            <article class="row">
-                <article class="columnam5">
-                    <article class="card">
-                        <div class="header">
-                            <h2>Programa tus Vacaciones</h2>
-                        </div>
-                        <div class="container">
-                            
-
-                            <form id="formulario">
-                                <div class="formgroup">
-                                    <input type="text" class="formcontrol" id="inputDestino" placeholder="Ingrese su Destino"></input>
-                                </div>
-                                <div class="formgroup">
-                                    <input type="text" class="formcontrol" id="inputActividades"  placeholder="Ingrese sus Actividades"></input>
-                                </div>
-                                <div class="formgroup">
-                                    <input type="text" class="formcontrol" id="inputPresupuesto" placeholder="Ingrese su Presupuesto"></input>
-                                </div>
-
-                                <button type="submit" class="buttonprimary">Guardar</button>
-                           
-                            </form>
-                            <br><br>
-
-                        </div>
-                    </article>
-                </article>
                 <article class="columnam6">
                     <table class="table">
                         <thead>
@@ -77,6 +83,23 @@
           
 
 
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Modifica tu Registro</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Entendido</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
 
@@ -85,6 +108,10 @@
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <script src="main.js"></script>  
+
+<footer>
+  <strong class="font-normal"> © 2022 Thalia Olvera </strong>
+</footer>
 
 </body>
 </html>

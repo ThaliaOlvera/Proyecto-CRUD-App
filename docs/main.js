@@ -38,7 +38,7 @@ function mostrarDatos (){
        <td> ${dato.presupuesto } </td>
        <td>
        
-       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick= "editarDatos(${indice})">editar</button> 
+       <button type="button" class="btn btn-primary" onclick= "editarDatos(${indice})">editar</button> 
        <button class="btn btn-danger" onclick= "eliminarDatos(${indice})">eliminar</button>  
        </td>
      </tr>`
