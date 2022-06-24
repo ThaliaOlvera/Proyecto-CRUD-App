@@ -10,7 +10,9 @@ color: whitesmoke;
 }
 
 
-
+h5 {
+    color: black;
+}
 
 .formcontrol {
     margin: 13px;
