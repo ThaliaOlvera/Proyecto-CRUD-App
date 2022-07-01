@@ -5,14 +5,21 @@ const formulario = document.getElementById('formulario');
 const inputDestino= document.getElementById('inputDestino');
 const inputActividades= document.getElementById('inputActividades');
 const inputPresupuesto= document.getElementById('inputPresupuesto');
+const inputNumeroDePersona= document.getElementById('inputNumeroDePersona');
+const inputEdoDelPresupuesto= document.getElementById('inputEdoDelPresupuesto');
+const inputFecha= document.getElementById('inputFecha');
+
 const bodyTabla = document.getElementById('body-tabla');
 let datos = [];
 
-function agregarDatos (destino, actividades, presupuesto){
+function agregarDatos (destino, actividades, presupuesto, numeroDePersonas, edoDelPresupuesto, fecha ){
        datos.push({
         destino,
         actividades: actividades,
         presupuesto: presupuesto,
+        numeroDePersonas: numeroDePersonas,
+        edoDelPresupuesto: edoDelPresupuesto,
+        fecha:fecha
        })
 }
 
@@ -36,6 +43,9 @@ function mostrarDatos (){
        <td> ${dato.destino } </td>
        <td> ${dato.actividades } </td>
        <td> ${dato.presupuesto } </td>
+       <td> ${dato.numeroDePersonas } </td>
+       <td> ${dato.edoDelPresupuesto } </td>
+       <td> ${dato.fecha } </td>
        <td>
        
        <button type="button" class="btn btn-primary" onclick= "editarDatos(${indice})">editar</button> 
@@ -57,7 +67,7 @@ function editarDatos(indice){
     mostrarDatos();
 }
 
-
+/* pendiente añadir un formulario de edicion*/
 
 
 
@@ -65,11 +75,11 @@ function editarDatos(indice){
 formulario.addEventListener('submit', function(Event){
     Event.preventDefault();
     
-    if (inputDestino.value.trim !== '' && inputActividades.value.trim !== '' && inputPresupuesto.value !== '')
+    if (inputDestino.value.trim !== '' && inputActividades.value.trim !== '' && inputPresupuesto.value !== ' ' && inputNumeroDePersonas.value !== '' && inputEdoDelPresupuesto.value !== ''&& inputFecha.value !=='')
    {
        bodyTabla.innerHTML= '';
 
-       agregarDatos(inputDestino.value, inputActividades.value, inputPresupuesto.value );
+       agregarDatos(inputDestino.value, inputActividades.value, inputPresupuesto.value, inputNumeroDePersonas.value, inputEdoDelPresupuesto.value, inputFecha.value );
 
        mostrarDatos (); 
 
