@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programador de Vacaciones</title>
+    <!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+   
+    <!--Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+<link href="styles.css" rel="stylesheet" type="text/css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arima:wght@200;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+
+    <header>
+    
+      <div class="header">
+      
+      </div>
+
+      <br>
+
+    </header>
+
+      <article class="container">
+
+        <h1><i>Programa tus Vacaciones</i></h1>
+
+                
+                <form id="formulario">
+
+                            <div class="col-md-6">
+                              <label for="inputDestino" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Escribe tu destino</font></font></label>
+                              <input type="text" class="form-control" id="inputDestino">
+                            </div>
+     
+                            <div class="col-12">
+                              <label for="inputActividades" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Escribe tus actividades</font></font></label>
+                              <input type="text" class="form-control" id="inputActividades" placeholder="Nado con tiburones, tour del vino...">
+                            </div>
+
+                            <div class="col-12">
+                              <label for="inputPresupuesto" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Escribe tu presupuesto</font></font></label>
+                              <input type="text" class="form-control" id="inputPresupuesto" placeholder="$2500.00">
+                            </div>
+
+                            <div class="col-md-8">
+                              <label for="inputNumeroDePersonas" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cantidad de personas</font></font></label>
+                              <input type="text" class="form-control" id="inputNumeroDePersonas" placeholder="2 Adultos,1 niño.">
+                            </div>
+
+                            <div class="col-md-6">
+                              <label for="inputFecha" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fecha</font></font></label>
+                              <input type="datetime-local" class="form-control" id="inputFecha">
+                            </div>
+
+                            
+                            <div class="col-md-4">
+                              <label for="inputEdoDelPresupuesto" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Estado del presupuesto</font></font></label>
+                              <select id="inputEdoDelPresupuesto" class="form-select">
+                                <option selected=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Elegir...</font></font></option>
+                                <option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pagado</font></font></option>
+                                <option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aprobado , pendiente de pago</font></font></option>
+                                <option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">En revision</font></font></option>
+                                <option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pago en el lugar</font></font></option>
+                              </select>
+                            <br>
+                            <div class="col-12">
+                              <button type="submit" class="btn btn-light"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Guardar</font></font></button>
+                             </div>
+                             
+                            </form>
+  
+                          <br><br>
+  
+              </article>
+   
+    <br><br>
+
+      <section>
+                <article class="columnam6">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Destino</th>
+                            <th scope="col">Actividades</th>
+                            <th scope="col">Presupuesto</th>
+                            <th scope="col">Numero de Personas</th>
+                            <th scope="col">Estado del Presupuesto</th>
+                            <th scope="col">Fecha</th>
+                            
+                            
+                          </tr>
+                        </thead>
+
+                        <tbody id="body-tabla">
+
+                         
+
+                        </tbody>
+
+                      </table>
+                </article>
+
+                
+
+      </section>
+     
+
+
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="main.js"></script>  
+
+<footer>
+  <strong class="font-normal"> © 2022 Thalia Olvera </strong>
+</footer>
+
+</body>
+</html>
