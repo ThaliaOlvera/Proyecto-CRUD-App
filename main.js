@@ -12,8 +12,8 @@ const inputFecha= document.getElementById('inputFecha');
 const bodyTabla = document.getElementById('body-tabla');
 let datos = [];
 
-function agregarDatos (destino, actividades, presupuesto, numeroDePersonas, edoDelPresupuesto, fecha ){
-       datos.push({
+function agregarDatos (destino, actividades, presupuesto, numeroDePersonas, edoDelPresupuesto, fecha ){  
+    datos.push({
         destino,
         actividades: actividades,
         presupuesto: presupuesto,
@@ -48,26 +48,27 @@ function mostrarDatos (){
        <td> ${dato.fecha } </td>
        <td>
        
-       <button type="button" class="btn btn-primary" onclick= "editarDatos(${indice})">editar</button> 
+       <button type="button" class="btn btn-primary" id="btnModificar" onclick= "editarDatos(${indice})">editar</button> 
        <button class="btn btn-danger" onclick= "eliminarDatos(${indice})">eliminar</button>  
        </td>
      </tr>`
     })
+   
     guardarDatosStorage ();
 }
 
 
-
-
-
 function editarDatos(indice){
-    datos[indice].destino = prompt('Ingresa Destino.');
-    datos[indice].actividades = prompt('Ingresa Actividades.');
-    datos[indice].presupuesto = prompt('Ingresa Presupuesto.');
+
+    datos[indice].destino = prompt ("Ingrese su destino")
+    datos[indice].actividades = prompt ("Ingrese sus actividades")
+    datos[indice].presupuesto = prompt ("Ingrese su presupuesto")
+    datos[indice].numeroDePersonas = prompt ("Ingrese numero de personas")
+    datos[indice].edoDelPresupuesto = prompt ("Ingrese Estado del presupuesto")
+    datos[indice].fecha = prompt ("Ingrese su fecha") 
     mostrarDatos();
 }
-
-/* pendiente añadir un formulario de edicion*/
+   
 
 
 
@@ -86,7 +87,7 @@ formulario.addEventListener('submit', function(Event){
        
        Event.target.reset();
     } else {
-        alert('Los 3 campos son obligatorios');
+        alert('Todos los campos son obligatorios');
     }
     
 });
