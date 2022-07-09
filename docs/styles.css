@@ -6,7 +6,7 @@
 
 
 body{
-     background-image: linear-gradient(135deg, #00b7d4, #02253d, #003d58, #005e7a, #008b9d, #00c2bc);
+     background: linear-gradient(135deg, #00b7d4, #02253d, #003d58, #005e7a, #008b9d, #00c2bc);
      background-size: 500%;
      animation: fanimado 10s infinite;
      color: whitesmoke;
@@ -30,7 +30,7 @@ body{
 
 }
 
-.header{
+header{
     background-image: url(docs/img/banner\ mar\ playa.png);
     background-size: cover;
     background-position: center center;
